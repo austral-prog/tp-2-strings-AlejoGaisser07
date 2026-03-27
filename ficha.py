@@ -33,7 +33,7 @@ def ficha():
     
     decoracion = "=" * 24
     nombre_strip = nombre.strip() # Saca cualquier espacio que haya puesto el usuario 
-    titulo = f"{decoracion}\n{'    FICHA DEL ALUMNO'}\n{decoracion}" # Titulo
+    titulo = f"{decoracion}\n{'FICHA DEL ALUMNO'.center(24).rstrip()}\n{decoracion}" # Titulo
     len_nombre = len(nombre_strip) # Cuento los caracteres del nombre
     partes = nombre_strip.find(' ') # Encuentra el espacio de en medio
     iniciales = nombre_strip[0] + nombre_strip[partes+1] # calcula las iniciales
