@@ -10,6 +10,6 @@ def check_vowels():
     print(f"Contiene o: {'o' in nombre_minusc}")
     print(f"Contiene u: {'u' in nombre_minusc}")
 
-check_vowels()
+#check_vowels()
 
 

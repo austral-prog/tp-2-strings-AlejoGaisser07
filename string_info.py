@@ -10,4 +10,4 @@ def string_info():
     print(f"Repetida: {palabra*3}")
     print(f"Decorada: {'***' + palabra + '***'}")
 
-string_info()
+#string_info()

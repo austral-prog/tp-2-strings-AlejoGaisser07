@@ -26,4 +26,4 @@ Linea 3"""
     print(f"Formato: {nombre.strip()} sabe Python") # f-string para poner el nombre en una frase
     print(f"{multilinea}") 
     
-string_methods()
+#string_methods()

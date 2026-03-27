@@ -4,3 +4,5 @@ def slice_advanced():
     """
     frase = input('Ingrese su frase: ')
     print(frase[4::2])
+
+#slice_advanced()

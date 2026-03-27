@@ -11,5 +11,5 @@ def names():
     print(nombre_completo.upper())
     print("\t" + nombre_completo.lower())
     
-names()
+#names()
 

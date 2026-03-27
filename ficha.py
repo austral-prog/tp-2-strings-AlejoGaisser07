@@ -58,4 +58,4 @@ def ficha():
     print(f"Promedio entero: {suma_notas//3}")
     print(decoracion)
 
-ficha()
+#ficha()
