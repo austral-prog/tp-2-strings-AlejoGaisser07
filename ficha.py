@@ -47,7 +47,7 @@ def ficha():
     print(f"Caracteres en nombre: {len_nombre}")
     print(f"Iniciales: {iniciales.upper()}") # Convierto las iniciales a mayusc.
     print(f"Usuario: {nombre_strip[partes+1:].lower()}.{nombre_strip[0:partes].lower()}") # desde el espacio hasta el final + . + desde el principio hasta el espacio
-    print(f"Email valido: {"@" in email}") # Que me devuelva True si tiene el @
+    print(f"Email valido: {'@' in email}") # Que me devuelva True si tiene el @
     print(f"Dominio: {dominio_email}") # Printea todo despues del @
     print(f"Nombre para archivo: {nombre_strip.replace(' ', '_').title()}") # que remplace el espacio de en medio por un _
     print(f"Cantidad de a: {nombre_strip.lower().count('a')}") # Cuenta las a, primero convierto a minusc.
