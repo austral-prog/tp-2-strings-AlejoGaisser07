@@ -33,11 +33,11 @@ def ficha():
     
     decoracion = "=" * 24
     nombre_strip = nombre.strip() # Saca cualquier espacio que haya puesto el usuario 
-    titulo = f"{decoracion}\n{"    FICHA DEL ALUMNO"}\n{decoracion}" # Titulo
+    titulo = f"{decoracion}\n{'    FICHA DEL ALUMNO'}\n{decoracion}" # Titulo
     len_nombre = len(nombre_strip) # Cuento los caracteres del nombre
-    partes = nombre_strip.find(" ") # Encuentra el espacio de en medio
+    partes = nombre_strip.find(' ') # Encuentra el espacio de en medio
     iniciales = nombre_strip[0] + nombre_strip[partes+1] # calcula las iniciales
-    dominio_email = email[email.find("@")+1:].lower() # busca a partir del @, uno más y en minúscula
+    dominio_email = email[email.find('@')+1:].lower() # busca a partir del @, uno más y en minúscula
     codigo_secreto = nombre_strip[::-1].upper() # Pongo el nombre al revés en mayúscula
     suma_notas = nota1 + nota2 + nota3
     
@@ -49,8 +49,8 @@ def ficha():
     print(f"Usuario: {nombre_strip[partes+1:].lower()}.{nombre_strip[0:partes].lower()}") # desde el espacio hasta el final + . + desde el principio hasta el espacio
     print(f"Email valido: {"@" in email}") # Que me devuelva True si tiene el @
     print(f"Dominio: {dominio_email}") # Printea todo despues del @
-    print(f"Nombre para archivo: {nombre_strip.replace(" ", "_").title()}") # que remplace el espacio de en medio por un _
-    print(f"Cantidad de a: {nombre_strip.lower().count("a")}") # Cuenta las a, primero convierto a minusc.
+    print(f"Nombre para archivo: {nombre_strip.replace(' ', '_').title()}") # que remplace el espacio de en medio por un _
+    print(f"Cantidad de a: {nombre_strip.lower().count('a')}") # Cuenta las a, primero convierto a minusc.
     print(f"Codigo secreto: {codigo_secreto}") 
     print(f"Nota 1: {nota1}\nNota 2: {nota2}\nNota 3: {nota3}")
     print(f"Suma: {suma_notas}")
